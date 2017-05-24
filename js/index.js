@@ -5,6 +5,7 @@ window.onresize = function(){
 }
 
 var data = [
+     {name: '仙桃', value: 27},
      {name: '海门', value: 9},
      {name: '鄂尔多斯', value: 12},
      {name: '招远', value: 12},
