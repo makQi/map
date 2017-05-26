@@ -4,6 +4,16 @@ window.onresize = function(){
 	myChartMap.resize();
 }
 
+$.ajax({
+    url: 'js/data/data.json',
+    type: 'GET',
+    dataType: 'text',
+    success: function(data){
+        var jsonData = eval('('+ data +')');
+        console.log(jsonData);
+    }
+});
+
 var data = [
      {name: '仙桃', value: 27},
      {name: '海门', value: 9},
